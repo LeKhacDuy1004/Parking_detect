@@ -149,6 +149,7 @@ def print_report(image_path, detections, infer_time):
 
 
 def main():
+    global CONF_THRESHOLD
     parser = argparse.ArgumentParser(description='Quét ảnh phát hiện chỗ trống bãi xe')
     parser.add_argument('--image', type=str, required=True,
                          help='Đường dẫn ảnh cần quét')
@@ -156,7 +157,6 @@ def main():
                          help='Ngưỡng confidence (mặc định 0.4)')
     args = parser.parse_args()
 
-    global CONF_THRESHOLD
     CONF_THRESHOLD = args.conf
 
     print("Đang tải model ONNX...")
