@@ -6,7 +6,7 @@ import argparse
 import os
 
 # ==================== CẤU HÌNH ====================
-ONNX_PATH = 'best.onnx'
+ONNX_PATH = 'parking_detect.onnx'
 IMG_SIZE = 480                            # PHẢI khớp với img-size lúc export
 CONF_THRESHOLD = 0.4
 IOU_THRESHOLD = 0.45
